@@ -10,7 +10,7 @@ namespace LogicalPograms
             Console.WriteLine(">>>>>>> Welcome to Logical Programs <<<<<<<");
             bool end = true;
             Console.WriteLine("1. Fibonacci Series\n2. Perfect Number\n3. Prime Number\n4. Reverse a Number\n" +
-                "5. Temperature Convertion\n6. End Of The Program");
+                "5. Temperature Convertion\n6.Day Of Week\n7. End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter an Option to Exicute.");
@@ -39,6 +39,10 @@ namespace LogicalPograms
                         tem.fehrenheitToCelsius();
                         break;
                     case 6:
+                        DayOfWeek1 day = new DayOfWeek1();
+                        day.WeekDay();
+                        break;
+                    case 7:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
