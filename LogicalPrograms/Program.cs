@@ -9,7 +9,7 @@ namespace LogicalPograms
         {
             Console.WriteLine(">>>>>>> Welcome to Logical Programs <<<<<<<");
             bool end = true;
-            Console.WriteLine("1. Fibonacci Series\n2. Perfect Number\n3. Prime Number\n4. End Of The Program");
+            Console.WriteLine("1. Fibonacci Series\n2. Perfect Number\n3. Prime Number\n4. Reverse a Number\n5. End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter an Option to Exicute.");
@@ -29,6 +29,10 @@ namespace LogicalPograms
                         prime.PrimeNum();
                         break;
                     case 4:
+                        ReverseNumber reverse = new ReverseNumber();
+                        reverse.ReverseNum();
+                        break;
+                    case 5:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
