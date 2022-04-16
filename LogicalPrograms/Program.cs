@@ -9,8 +9,7 @@ namespace LogicalPograms
         {
             Console.WriteLine(">>>>>>> Welcome to Logical Programs <<<<<<<");
             bool end = true;
-            Console.WriteLine("1. Fibonacci Series\n2. Perfect Number\n3. Prime Number\n4. Reverse a Number\n" +
-                "5. Temperature Convertion\n6. Day Of Week\n7. Monthly Payment\n8. Vending Machine\n9.End Of The Program");
+            Console.WriteLine("1. Fibonacci Series\n2. Perfect Number\n3. Prime Number\n4. Reverse a Number\n5. End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter an Option to Exicute.");
@@ -34,23 +33,6 @@ namespace LogicalPograms
                         reverse.ReverseNum();
                         break;
                     case 5:
-                        Temperature tem = new Temperature();
-                        tem.celsiusToFehrenheit();
-                        tem.fehrenheitToCelsius();
-                        break;
-                    case 6:
-                        DayOfWeek1 day = new DayOfWeek1();
-                        day.WeekDay();
-                        break;
-                    case 7:
-                        MonthlyPayment pay=new MonthlyPayment();
-                        pay.Payment();
-                        break;
-                    case 8:
-                       VendingMachine machine = new VendingMachine();
-                        machine.Counting();
-                        break;
-                    case 9:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
